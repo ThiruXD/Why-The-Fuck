@@ -81,7 +81,7 @@ async def gstart(_, message: Message):
             ],
             [
                 InlineKeyboardButton(
-                    text="☁ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ☁", url="https://github.com/AnonymousR1025/FallenMusic"
+                    text="☁ ᴀssɪsᴛᴀɴᴛ ☁", url="https://t.me/im_miss_music"
                 ),
             ],
         ]
