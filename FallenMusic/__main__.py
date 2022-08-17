@@ -24,7 +24,7 @@ HELPABLE = {}
 
 async def fallen_boot():
     with console.status(
-        "[magenta] Booting Fallen Music...",
+        "[magenta] Booting Salina Music...",
     ) as status:
         console.print("┌ [red]Clearing MongoDB Cache...")
         try:
@@ -81,7 +81,7 @@ async def fallen_boot():
     try:
         await app.send_message(
             config.LOGGER_ID,
-            f"<b>➻ ғᴀʟʟᴇɴ ᴍᴜsɪᴄ ʙᴏᴛ 🔮\n\n❄ ɪᴅ :</b> `{BOT_ID}`\n✨ <b>ɴᴀᴍᴇ :</b> {BOT_NAME}\n☁ <b>ᴜsᴇʀɴᴀᴍᴇ :</b> @{BOT_USERNAME}",
+            f"<b>➻ Sʜᴀʟɪɴɪ ᴍᴜsɪᴄ ʙᴏᴛ 🔮\n\n❄ ɪᴅ :</b> `{BOT_ID}`\n✨ <b>ɴᴀᴍᴇ :</b> {BOT_NAME}\n☁ <b>ᴜsᴇʀɴᴀᴍᴇ :</b> @{BOT_USERNAME}",
         )
     except Exception as e:
         print(
@@ -97,7 +97,7 @@ async def fallen_boot():
     try:
         await Ass.send_message(
             config.LOGGER_ID,
-            f"<b>➻ ғᴀʟʟᴇɴ ᴍᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ 🔮\n\n❄ ɪᴅ :</b> `{ASSID}`\n✨ <b>ɴᴀᴍᴇ :</b> {ASSNAME}\n☁ <b>ᴜsᴇʀɴᴀᴍᴇ :</b> @{ASSUSERNAME}",
+            f"<b>➻ Sʜᴀʟɪɴɪ ᴍᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ 🔮\n\n❄ ɪᴅ :</b> `{ASSID}`\n✨ <b>ɴᴀᴍᴇ :</b> {ASSNAME}\n☁ <b>ᴜsᴇʀɴᴀᴍᴇ :</b> @{ASSUSERNAME}",
         )
     except Exception as e:
         print(
@@ -106,8 +106,8 @@ async def fallen_boot():
         console.print(f"\n[red]Stopping Bot")
         return
     try:
-        await Ass.join_chat("DevilsHeavenMF")
-        await Ass.join_chat("FallenXBots")
+        await Ass.join_chat("TamilChat_CRINGE_GUYS")
+        await Ass.join_chat("TamilChat_CRINGE_GUYS")
     except:
         pass
     console.print(f"\n┌[red] Bot Started as {BOT_NAME}!")
@@ -116,9 +116,7 @@ async def fallen_boot():
     console.print(f"\n[red]Stopping Bot")
 
 
-home_text_pm = f"""**ʜᴇʏ ,
-
-ᴛʜɪs ɪs** {BOT_NAME},
+home_text_pm = f"""**ʜɪ ᴛʜɪs ɪs** {BOT_NAME},
 **ᴀ ғᴀsᴛ ᴀɴᴅ ᴩᴏᴡᴇʀғᴜʟ ᴍᴜsɪᴄ ᴩʟᴀʏᴇʀ ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴠɪᴅᴇᴏᴄʜᴀᴛs.**
 
 ━━━━━━━━━━━━━━━━━━━━━
@@ -217,7 +215,7 @@ async def start_command(_, message):
             ],
             [
                 InlineKeyboardButton(
-                    text="☁ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ☁", url="https://github.com/AnonymousR1025/Fallen-Music"
+                    text="☁ ᴀssɪsᴛᴀɴᴛ ☁", url="https://t.me/im_miss_music"
                 )
             ],
         ]
@@ -227,7 +225,7 @@ async def start_command(_, message):
 
 @app.on_callback_query(filters.regex("fallen_home"))
 async def fallen_home(_, CallbackQuery):
-    await CallbackQuery.answer("ғᴀʟʟᴇɴ ʜᴏᴍᴇ")
+    await CallbackQuery.answer("Sʜᴀʟɪɴɪ ʜᴏᴍᴇ")
     await CallbackQuery.message.edit_text(
         text=home_text_pm,
         reply_markup=InlineKeyboardMarkup(
@@ -255,7 +253,7 @@ async def fallen_home(_, CallbackQuery):
             ],
             [
                 InlineKeyboardButton(
-                    text="☁ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ☁", url="https://github.com/AnonymousR1025/Fallen-Music"
+                    text="☁ ᴀssɪsᴛᴀɴᴛ ☁", url="https://t.me/im_miss_music"
                 )
             ],
         ]
