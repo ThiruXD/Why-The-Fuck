@@ -10,6 +10,11 @@ def primary_markup(videoid, user_id):
         db_mem[videoid] = {}
     db_mem[videoid]["check"] = 2
     buttons = [
+        InlineKeyboardButton(
+                text=f"{total_time} ▅ ▇ ▆ ▃ ▄ ▁ ▅ ▇ ▅ {current_time}",
+                callback_data=f"timer_checkup_markup {videoid}|{user_id}",
+            )
+        ],
         [
             InlineKeyboardButton(text="▷", callback_data=f"resumecb"),
             InlineKeyboardButton(text="II", callback_data=f"pausecb"),
@@ -28,6 +33,11 @@ def primary_markup(videoid, user_id):
 
 audio_markup = InlineKeyboardMarkup(
     [
+        InlineKeyboardButton(
+                text=f"{total_time} ▅ ▇ ▆ ▃ ▄ ▁ ▅ ▇ ▅ {current_time}",
+                callback_data=f"timer_checkup_markup {videoid}|{user_id}",
+            )
+        ],
         [
             InlineKeyboardButton(text="▷", callback_data=f"resumecb"),
             InlineKeyboardButton(text="II", callback_data=f"pausecb"),
