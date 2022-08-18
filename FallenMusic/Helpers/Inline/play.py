@@ -24,9 +24,6 @@ def primary_markup(videoid, user_id):
             InlineKeyboardButton(
                 text="✨ sᴜᴩᴩᴏʀᴛ ✨", url=config.SUPPORT_CHAT
             ),
-            InlineKeyboardButton(
-                text="• ᴍᴏʀᴇ  •", callback_data=f"other {videoid}|{user_id}"
-            ),
         ],
         [
             InlineKeyboardButton(text="↻ ᴄʟᴏsᴇ ↺", callback_data=f"close"),
