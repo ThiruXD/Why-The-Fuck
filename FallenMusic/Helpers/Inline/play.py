@@ -12,8 +12,7 @@ def primary_markup(videoid, user_id):
     buttons = [
         InlineKeyboardButton(
                 text=f" ▅ ▇ ▆ ▃ ▄ ▁ ▅ ▇ ▅ ",
-                callback_data=f"I'ᴠᴇ  Gɪғᴛᴇᴅ  Wᴏʀᴅ's  Aʟʟ  Sᴏɴɢ  Fᴏʀ  Yᴏᴜ  Bʏ  Tʜɪs  Bᴏᴛ  .·  ˚  •  .  ⋆🧚",
-            )
+                callback_data=f"I'ᴠᴇ  Gɪғᴛᴇᴅ  Wᴏʀᴅ's  Aʟʟ  Sᴏɴɢ  Fᴏʀ  Yᴏᴜ  Bʏ  Tʜɪs  Bᴏᴛ  .·  ˚  •  .  ⋆🧚"),
         ],
         [
             InlineKeyboardButton(text="▷", callback_data=f"resumecb"),
@@ -35,8 +34,7 @@ audio_markup = InlineKeyboardMarkup(
     [
         InlineKeyboardButton(
                 text=f" ▅ ▇ ▆ ▃ ▄ ▁ ▅ ▇ ▅ ",
-                callback_data=f"I'ᴠᴇ  Gɪғᴛᴇᴅ  Wᴏʀᴅ's  Aʟʟ  Sᴏɴɢ  Fᴏʀ  Yᴏᴜ  Bʏ  Tʜɪs  Bᴏᴛ  .·  ˚  •  .  ⋆🧚",
-            )
+                callback_data=f"I'ᴠᴇ  Gɪғᴛᴇᴅ  Wᴏʀᴅ's  Aʟʟ  Sᴏɴɢ  Fᴏʀ  Yᴏᴜ  Bʏ  Tʜɪs  Bᴏᴛ  .·  ˚  •  .  ⋆🧚"),
         ],
         [
             InlineKeyboardButton(text="▷", callback_data=f"resumecb"),
