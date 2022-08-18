@@ -10,9 +10,9 @@ def primary_markup(videoid, user_id):
         db_mem[videoid] = {}
     db_mem[videoid]["check"] = 2
     buttons = [
-        InlineKeyboardButton(
-                text=f" ▅ ▇ ▆ ▃ ▄ ▁ ▅ ▇ ▅ ",
-                callback_data=f"I'ᴠᴇ  Gɪғᴛᴇᴅ  Wᴏʀᴅ's  Aʟʟ  Sᴏɴɢ  Fᴏʀ  Yᴏᴜ  Bʏ  Tʜɪs  Bᴏᴛ  .·  ˚  •  .  ⋆🧚"),
+            InlineKeyboardButton(
+                text=" ▅ ▇ ▆ ▃ ▄ ▁ ▅ ▇ ▅ ", url=config.SUPPORT_CHAT
+            ),
         ],
         [
             InlineKeyboardButton(text="▷", callback_data=f"resumecb"),
@@ -37,9 +37,9 @@ def primary_markup(videoid, user_id):
 
 audio_markup = InlineKeyboardMarkup(
     [
-        InlineKeyboardButton(
-                text=f" ▅ ▇ ▆ ▃ ▄ ▁ ▅ ▇ ▅ ",
-                callback_data=f"I'ᴠᴇ  Gɪғᴛᴇᴅ  Wᴏʀᴅ's  Aʟʟ  Sᴏɴɢ  Fᴏʀ  Yᴏᴜ  Bʏ  Tʜɪs  Bᴏᴛ  .·  ˚  •  .  ⋆🧚"),
+            InlineKeyboardButton(
+                text=" ▅ ▇ ▆ ▃ ▄ ▁ ▅ ▇ ▅ ", url=config.SUPPORT_CHAT
+            ),     
         ],
         [
             InlineKeyboardButton(text="▷", callback_data=f"resumecb"),
