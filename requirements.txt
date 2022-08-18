@@ -8,6 +8,8 @@ hachoir
 heroku3
 lyricsgenius
 motor
+numpy
+rich
 pillow
 psutil
 py-tgcalls==0.9.1
