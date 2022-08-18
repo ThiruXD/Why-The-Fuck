@@ -97,7 +97,8 @@ def audio_timer_markup_start(videoid, user_id, current_time, total_time):
     return buttons
 
 
-audio_markup2 = InlineKeyboardMarkup(
+
+close_key = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(text="▷", callback_data=f"resumecb"),
