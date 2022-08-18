@@ -10,10 +10,6 @@ def primary_markup(videoid, user_id):
         db_mem[videoid] = {}
     db_mem[videoid]["check"] = 2
     buttons = [
-            InlineKeyboardButton(
-                text=" ▅ ▇ ▆ ▃ ▄ ▁ ▅ ▇ ▅ ", url=config.SUPPORT_CHAT
-            ),
-        ],
         [
             InlineKeyboardButton(text="▷", callback_data=f"resumecb"),
             InlineKeyboardButton(text="II", callback_data=f"pausecb"),
@@ -22,10 +18,8 @@ def primary_markup(videoid, user_id):
         ],
         [
             InlineKeyboardButton(
-                text="✨ sᴜᴩᴩᴏʀᴛ ✨", url=config.SUPPORT_CHAT
+                text="• sᴜᴩᴩᴏʀᴛ •", url=config.SUPPORT_CHAT
             ),
-        ],
-        [
             InlineKeyboardButton(text="↻ ᴄʟᴏsᴇ ↺", callback_data=f"close"),
         ],
     ]
@@ -34,22 +28,13 @@ def primary_markup(videoid, user_id):
 
 audio_markup = InlineKeyboardMarkup(
     [
-            InlineKeyboardButton(
-                text=" ▅ ▇ ▆ ▃ ▄ ▁ ▅ ▇ ▅ ", url=config.SUPPORT_CHAT
-            ),     
-        ],
         [
             InlineKeyboardButton(text="▷", callback_data=f"resumecb"),
             InlineKeyboardButton(text="II", callback_data=f"pausecb"),
             InlineKeyboardButton(text="‣‣I", callback_data=f"skipcb"),
             InlineKeyboardButton(text="▢", callback_data=f"stopcb"),
         ],
-        [
-            InlineKeyboardButton(
-                text="✨ sᴜᴩᴩᴏʀᴛ ✨", url=config.SUPPORT_CHAT
-            ),
-        ],
-        [InlineKeyboardButton(text="↻ ᴄʟᴏsᴇ ↺", callback_data=f"close")]
+        [InlineKeyboardButton("↻ ᴄʟᴏsᴇ ↺", callback_data="close")],
     ]
 )
 
